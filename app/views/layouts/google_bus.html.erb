@@ -1,0 +1,58 @@
+<meta charset="utf-8" />
+<title><%= full_title(yield(:title)) %></title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+    $(function() {
+      $( "#tabs" ).tabs({
+        event: "mouseover"
+      });
+    });
+  </script>
+</head>
+
+<style>
+  #map-canvas {
+    height: 81%;
+    margin: -16.7px;
+    padding: 60px
+  }
+</style>
+
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqAmcqQTrwsmAIpTcqMQQIeA9v85YrQOU&sensor=true">
+  </script>
+  <script>
+    google.maps.visualRefresh = true;
+    var map;
+    function initialize() {
+      var mapOptions = {
+        zoom: 18,
+        center: new google.maps.LatLng(10.7714015, 106.70627820000004),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+<body>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Tìm Tuyến Xe Buýt</a></li>
+      <li><a href="#tabs-2">Tìm Tuyến Đi Ngắn Nhất</a></li>
+      <li><a href="#tabs-3">Về Trang Chủ</a></li>
+    </ul>
+    <div id="tabs-1">
+      <div id="map-canvas"></div>
+    </div>
+    <div id="tabs-2">
+      <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+    </div>
+    <div id="tabs-3">
+      <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    </div>
+  </div>
+</body>
+</html>

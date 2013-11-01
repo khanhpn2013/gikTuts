@@ -13,4 +13,7 @@ class HomeController < ApplicationController
   def google
     return render  layout: 'google_map'
   end
+
+  def google_map
+  end
 end

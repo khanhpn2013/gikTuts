@@ -1,4 +1,5 @@
 GikTuts::Application.routes.draw do
+  get "google_maps/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -8,6 +9,7 @@ GikTuts::Application.routes.draw do
   match'service', to: 'home#profile', via: [:get, :post]
   get 'library', to: 'home#profile'
   match 'google', to: 'home#google', via: [:get, :post]
+  match 'map', to: 'google_maps#index', via: [:get, :post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
