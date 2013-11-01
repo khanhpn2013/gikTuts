@@ -1,9 +1,8 @@
 GikTuts::Application.routes.draw do
-  get "gik_users/new"
+  get "signup", to: "gik_users/new"
   get "gik_users/create"
   get "gik_users/edit"
-  get "gik_users/profile"
-  get "google_maps/index"
+  get "profile", to: "gik_users/profile"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -14,6 +13,7 @@ GikTuts::Application.routes.draw do
   get 'library', to: 'home#profile'
   match 'google', to: 'home#google', via: [:get, :post]
   match 'map', to: 'google_maps#index', via: [:get, :post]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
