@@ -4,39 +4,37 @@
     <div id="main_menu">
       <ul>
         <li class="first_list"><%= link_to "Trang chủ", root_path, class: 'main_menu_first' %></li>
-        <li class="first_list"><%= link_to "Giới Thiệu", '#', class: 'main_menu_first' %></li>
-        <li class="first_list with_dropdown">
-          <%= link_to "Thư Viện Ebook", '#', class: 'main_menu_first' %>
-          <ul>
-            <li class="second_list second_list_border"><%= link_to "Java", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "Ruby on Rails", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "MongoDB", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "MySQL", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "Oracle", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "Linux", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "PHP", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to ".NET", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "C/C++", '#', class: 'main_menu_second' %></li>
-            <li class="second_list"><%= link_to "Groovy on Grails", '#', class: 'main_menu_second' %></li>
-          </ul>
-        </li>
-        <li class="first_list with_dropdown">
-          <a href="portfolio.html" class="main_menu_first">Thư Viện Video</a>
-          <ul>
-            <li class="second_list second_list_border"><%= link_to "Java", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "Ruby on Rails", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "MongoDB", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "MySQL", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "Oracle", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "Linux", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "PHP", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to ".NET", '#', class: 'main_menu_second' %></li>
-            <li class="second_list second_list_border"><%= link_to "C/C++", '#', class: 'main_menu_second' %></li>
-            <li class="second_list"><%= link_to "Groovy on Grails", '#', class: 'main_menu_second' %></li>
-          </ul>
-        </li>
         <li class="first_list"><%= link_to "Bản Đồ", map_path, class: "main_menu_first" %></li>
+        <li class="first_list with_dropdown"><%= link_to "Thư Viện Ebook", '#', class: 'main_menu_first' %>
+          <ul>
+            <li class="second_list second_list_border"><%= link_to "Java", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "Ruby on Rails", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "MongoDB", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "MySQL", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "Oracle", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "Linux", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "PHP", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to ".NET", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "C/C++", '#', class: 'main_menu_second' %></li>
+            <li class="second_list"><%= link_to "Groovy on Grails", '#', class: 'main_menu_second' %></li>
+          </ul>
+        </li>
+        <li class="first_list with_dropdown"><a href="portfolio.html" class="main_menu_first">Thư Viện Video</a>
+          <ul>
+            <li class="second_list second_list_border"><%= link_to "Java", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "Ruby on Rails", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "MongoDB", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "MySQL", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "Oracle", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "Linux", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "PHP", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to ".NET", '#', class: 'main_menu_second' %></li>
+            <li class="second_list second_list_border"><%= link_to "C/C++", '#', class: 'main_menu_second' %></li>
+            <li class="second_list"><%= link_to "Groovy on Grails", '#', class: 'main_menu_second' %></li>
+          </ul>
+        </li>
         <li class="first_list"><%= link_to "Hỗ Trợ", contact_path, class: "main_menu_first" %></li>
+        <li class="first_list"><%= link_to "Đăng Nhập", '#', class: 'main_menu_first' %></li>
       </ul>
     </div> <!-- END #main_menu -->
   </div> <!-- END .container -->

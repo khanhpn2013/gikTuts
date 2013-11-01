@@ -1,4 +1,8 @@
 GikTuts::Application.routes.draw do
+  get "gik_users/new"
+  get "gik_users/create"
+  get "gik_users/edit"
+  get "gik_users/profile"
   get "google_maps/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -11,6 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20131101062721) do
+
+  create_table "gik_users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "token_reset_pasword"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+  end
+
+  add_index "gik_users", ["email"], name: "index_gik_users_on_email", unique: true, using: :btree
 
 end
