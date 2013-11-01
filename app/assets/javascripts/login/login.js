@@ -63,9 +63,7 @@ $(function() {
     }
   });
 
-  $( "#create-user" )
-    .button()
-    .click(function() {
-      $( "#dialog-form" ).dialog( "open" );
-    });
+  $( "#id_signup" ).click(function() {
+    $( "#dialog-form" ).dialog( "open" );
+  });
 });

@@ -1,8 +1,8 @@
 GikTuts::Application.routes.draw do
-  get "signup", to: "gik_users/new"
+  get "signup", to: "gik_users#new"
   get "gik_users/create"
   get "gik_users/edit"
-  get "profile", to: "gik_users/profile"
+  get "profile", to: "gik_users#profile"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

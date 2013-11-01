@@ -2,7 +2,7 @@ class GikUsersController < ApplicationController
   layout "layout_index"
 
   def new
-    @gik_user = GikUsers.new
+    @gik_user = GikUser.new
   end
 
   def create
