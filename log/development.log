@@ -21536,6 +21536,7 @@ Processing by HomeController#index as */*
 Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/map" for 127.0.0.1 at 2013-11-01 17:47:12 +0700
 Processing by GoogleMapsController#index as HTML
   Rendered google_maps/index.html.erb within layouts/google_bus (0.1ms)
@@ -21546,3 +21547,790 @@ Started GET "/map" for 127.0.0.1 at 2013-11-01 17:47:12 +0700
 Processing by GoogleMapsController#index as HTML
   Rendered google_maps/index.html.erb within layouts/google_bus (0.1ms)
 Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/" for 127.0.0.1 at 2013-11-02 08:38:30 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/layout_index (12.4ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 269ms (Views: 232.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/gik_users.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/google_maps.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/login/login.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/jquery_ui/jquery-ui.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/gik_users.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/google_maps.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/jquery-2.0.3.min.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/jquery_ui/jquery-ui.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/banner_image.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/arrow_right.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/bluearrow_left.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/bluearrow_right.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/sample_view.gif" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/client01.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/client02.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/client03.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/client04.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/client05.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/client06.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/logo.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/arrow_down.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/jquery_ui/images/ui-bg_flat_75_ffffff_40x100.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-bg_flat_75_ffffff_40x100.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.2ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (108.6ms)
+
+
+Started GET "/images/banner_shadow.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+ActionController::RoutingError (No route matches [GET] "/images/banner_shadow.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.2ms)
+
+
+Started GET "/assets/component/grey_button.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/white_button.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/pen_icon.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/screen_icon.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/layer_icon.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/paperplane_icon.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/cursor_icon.png" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/latest_work01.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/latest_work02.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/latest_work03.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/latest_work04.jpg" for 127.0.0.1 at 2013-11-02 08:38:31 +0700
+
+
+Started GET "/assets/component/speechcloud_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/people_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/download_button.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/facebook_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/dribbble_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/pinterest_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/linkedin_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/skype_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/component/sharethis_icon.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+
+Started GET "/assets/jquery_ui/images/ui-icons_222222_256x240.png" for 127.0.0.1 at 2013-11-02 08:38:32 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-icons_222222_256x240.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.6ms)
+
+
+Started GET "/assets/jquery_ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png" for 127.0.0.1 at 2013-11-02 08:38:36 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (33.9ms)
+
+
+Started GET "/assets/jquery_ui/images/ui-bg_glass_75_e6e6e6_1x400.png" for 127.0.0.1 at 2013-11-02 08:38:36 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-bg_glass_75_e6e6e6_1x400.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.7ms)
+
+
+Started GET "/assets/jquery_ui/images/ui-icons_888888_256x240.png" for 127.0.0.1 at 2013-11-02 08:38:36 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-icons_888888_256x240.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.3ms)
+
+
+Started GET "/assets/jquery_ui/images/ui-bg_flat_0_aaaaaa_40x100.png" for 127.0.0.1 at 2013-11-02 08:38:36 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-bg_flat_0_aaaaaa_40x100.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.6ms)
+
+
+Started GET "/assets/jquery_ui/images/ui-bg_glass_75_dadada_1x400.png" for 127.0.0.1 at 2013-11-02 08:38:36 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-bg_glass_75_dadada_1x400.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.7ms)
+
+
+Started GET "/assets/jquery_ui/images/ui-icons_454545_256x240.png" for 127.0.0.1 at 2013-11-02 08:38:36 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-icons_454545_256x240.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (81.1ms)
+
+
+Started GET "/assets/jquery_ui/images/ui-bg_glass_65_ffffff_1x400.png" for 127.0.0.1 at 2013-11-02 08:38:40 +0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/jquery_ui/images/ui-bg_glass_65_ffffff_1x400.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.0) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.0) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.0) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.0) lib/thin/connection.rb:55:in `process'
+  thin (1.6.0) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.0) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.0) lib/rails/commands.rb:78:in `block in <top (required)>'
+  railties (4.0.0) lib/rails/commands.rb:73:in `tap'
+  railties (4.0.0) lib/rails/commands.rb:73:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/khanhpn/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/layout_index (1.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/google_maps.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/gik_users.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/jquery_ui/jquery-ui.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/gik_users.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/google_maps.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/jquery-2.0.3.min.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/jquery_ui/jquery-ui.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/banner_image.jpg" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/arrow_right.png" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/bluearrow_left.png" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/bluearrow_right.png" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/sample_view.gif" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/client01.jpg" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/client02.jpg" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/client03.jpg" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/client04.jpg" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/client05.jpg" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/assets/component/client06.jpg" for 127.0.0.1 at 2013-11-02 08:38:42 +0700
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/layout_index (2.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/gik_users.css?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/google_maps.css?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/jquery_ui/jquery-ui.css?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/gik_users.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/google_maps.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/jquery-2.0.3.min.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/jquery_ui/jquery-ui.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-02 08:39:20 +0700
+
+
+Started GET "/assets/component/banner_image.jpg" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/arrow_right.png" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/bluearrow_left.png" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/bluearrow_right.png" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/sample_view.gif" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/client01.jpg" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/client02.jpg" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/client03.jpg" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/client04.jpg" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/client05.jpg" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+
+
+Started GET "/assets/component/client06.jpg" for 127.0.0.1 at 2013-11-02 08:39:21 +0700
+>>>>>>> origin/khanhpn_jquery_ui_signup
