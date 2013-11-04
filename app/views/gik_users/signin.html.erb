@@ -1,0 +1,24 @@
+<%= provide(:title, "Đăng nhập") %>
+
+<div class="wrapper">
+  <%= form_tag({controller: 'gik_users', action: 'signin'}, method: "post", class: 'form1') do %>
+    <div class="formtitle">Đăng nhập</div>
+    <div class="input">
+      <div class="inputtext">Email: </div>
+      <div class="inputcontent">
+        <%= text_field_tag "gik_user[email]", nil, placeholder: 'Email' %>
+      </div>
+    </div>
+    <div class="input nobottomborder">
+      <div class="inputtext">Mật khẩu: </div>
+      <div class="inputcontent">
+        <%= password_field_tag "gik_user[password]", nil, placeholder: 'Mật khẩu' %>
+        <br/><%= link_to "Quên mật khẩu?", "#" %><span><%= link_to "Chưa đăng ký?", signup_path %></span>
+      </div>
+    </div>
+    <div class="buttons">
+      <%= submit_tag "Đăng nhập", class: 'orangebutton' %>
+      <%= submit_tag "Huỷ bỏ", class: 'greybutton' %>
+    </div>
+  <% end %>
+</div>
