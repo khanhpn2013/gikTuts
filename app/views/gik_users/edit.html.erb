@@ -1,0 +1,40 @@
+<%= provide(:title, "Cập nhật tài khoản") %>
+
+<div class="wrapper">
+  <%= form_for @gik_user, :url => url_for(controller: "gik_users", action: "edit"), html: { class: 'form1' } do |f| %>
+    <div class="formtitle">Cập nhật tài khoản</div>
+    <div class="input">
+      <div class="inputtext">Họ và tên: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:name]) %>
+        <%= f.text_field :name, placeholder: 'Họ và tên' %>
+      </div>
+    </div>
+    <div class="input">
+      <div class="inputtext">Email: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:email]) %>
+        <%= f.text_field :email, placeholder: 'Email' %>
+      </div>
+    </div>
+    <div class="input nobottomborder">
+      <div class="inputtext">Mật khẩu: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:password]) %>
+        <%= f.password_field :password, placeholder: 'Mật khẩu' %>
+      </div>
+    </div>
+    <div class="input nobottomborder">
+      <div class="inputtext">Gõ lại mật khẩu: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:password_confirmation]) %>
+        <%= f.password_field :password_confirmation, placeholder: 'Gõ lại mật khẩu' %>
+        <br/><%= link_to "Đã có tài khoản?", signin_path %>
+      </div>
+    </div>
+    <div class="buttons">
+      <%= f.submit "Cập nhật", class: 'orangebutton' %>
+      <%= f.submit "Huỷ bỏ", class: 'greybutton' %>
+    </div>
+  <% end %>
+</div>

@@ -37,11 +37,11 @@
         <% if current_user.blank? %>
           <li class="first_list"><%= link_to "Đăng Nhập", signin_path, class: 'main_menu_first', id: "id_signup" %></li>
         <% else %>
-          <li class="first_list with_dropdown"><%= link_to "Cài Đặt", "#", class: 'main_menu_first', id: "id_signup" %>
+          <li class="first_list with_dropdown"><%= link_to "Cài Đặt", "#", class: 'main_menu_first' %>
             <ul>
-              <li class="second_list second_list_border"><%= link_to "Java", '#', class: 'main_menu_second' %></li>
-              <li class="second_list second_list_border"><%= link_to "Tài khoản", '#', class: 'main_menu_second' %></li>
-              <li class="second_list second_list_border"><%= link_to "Đăng xuất", signout_path, class: 'main_menu_second' %></li>
+              <li class="second_list second_list_border"><%= link_to "Thông tin tài khoản", '#', class: 'main_menu_second' %></li>
+              <li class="second_list second_list_border"><%= link_to "Thiết lập tài khoản", edit_path, class: 'main_menu_second' %></li>
+              <li class="second_list second_list_border"><%= link_to "Đăng xuất", signout_path, class: 'main_menu_second', id: "id_signout" %></li>
             </ul>
           </li>
         <% end %>
