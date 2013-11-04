@@ -1,8 +1,10 @@
 GikTuts::Application.routes.draw do
   get "signup", to: "gik_users#new"
+  match "signin", to: "gik_users#signin", via: [:post, :get]
+  match "signout", to: "gik_users#signout", via: [:post, :get]
   get "gik_users/create"
-  get "gik_users/edit"
   get "profile", to: "gik_users#profile"
+  resources :gik_users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

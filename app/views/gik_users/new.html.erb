@@ -1,37 +1,40 @@
 <%= provide(:title, "Đăng ký") %>
 
-<%= stylesheet_link_tag "/jquery_ui/jquery-2.0.3.min" %>
-<%= stylesheet_link_tag "/jquery_ui/jquery-ui" %>
-<%= javascript_include_tag "/login/login" %>
-<%= javascript_include_tag "/jquery_ui/jquery-ui" %>
-
-<style>
-  body { font-size: 62.5%; }
-  label, input { display:block; }
-  input.text { margin-bottom:12px; width:95%; padding: .4em; }
-  fieldset { padding:0; border:0; margin-top:25px; }
-  h1 { font-size: 1.2em; margin: .6em 0; }
-  div#users-contain { width: 350px; margin: 20px 0; }
-  div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
-  div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
-  .ui-dialog .ui-state-error { padding: .3em; }
-  .validateTips { border: 1px solid transparent; padding: 0.3em; }
-</style>
-
-<div id="dialog-form" title="Create new user">
-  <p class="validateTips">All form fields are required.</p>
-
-  <form>
-  <fieldset>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-    <label for="email">Email</label>
-    <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
-    <label for="password_confirmation">Password Confirmation</label>
-    <input type="password" name="password_confirmation" id="password_confirmation" value="" class="text ui-widget-content ui-corner-all" />
-  </fieldset>
-  </form>
+<div class="wrapper">
+  <%= form_for @gik_user, html: { class: 'form1' } do |f| %>
+    <div class="formtitle">Đăng ký tài khoản</div>
+    <div class="input">
+      <div class="inputtext">Họ và tên: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:name]) %>
+        <%= f.text_field :name, placeholder: 'Họ và tên' %>
+      </div>
+    </div>
+    <div class="input">
+      <div class="inputtext">Email: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:email]) %>
+        <%= f.text_field :email, placeholder: 'Email' %>
+      </div>
+    </div>
+    <div class="input nobottomborder">
+      <div class="inputtext">Mật khẩu: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:password]) %>
+        <%= f.password_field :password, placeholder: 'Mật khẩu' %>
+      </div>
+    </div>
+    <div class="input nobottomborder">
+      <div class="inputtext">Gõ lại mật khẩu: </div>
+      <div class="inputcontent">
+        <%= errors_form(@gik_user, [:password_confirmation]) %>
+        <%= f.password_field :password_confirmation, placeholder: 'Gõ lại mật khẩu' %>
+        <br/><%= link_to "Đã có tài khoản?", signin_path %>
+      </div>
+    </div>
+    <div class="buttons">
+      <%= f.submit "Đăng ký", class: 'orangebutton' %>
+      <%= f.submit "Huỷ bỏ", class: 'greybutton' %>
+    </div>
+  <% end %>
 </div>
-<button id="create-user">Create new user</button>
