@@ -21534,3 +21534,15 @@ Processing by HomeController#index as */*
   Rendered layouts/_header.html.erb (0.8ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-11-01 17:47:12 +0700
+Processing by GoogleMapsController#index as HTML
+  Rendered google_maps/index.html.erb within layouts/google_bus (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/map" for 127.0.0.1 at 2013-11-01 17:47:12 +0700
+Processing by GoogleMapsController#index as HTML
+  Rendered google_maps/index.html.erb within layouts/google_bus (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
